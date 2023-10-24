@@ -117,4 +117,40 @@ p.content-rate{
 }
 
 
+@media (max-width: 1000px) {
+    #main {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+
+    #sidebar {
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+    }
+    
+    .line-title {
+        justify-content: flex-start; 
+    }
+}
+
+@media (max-width: 800px) {
+    .content {
+        width: 100%;
+        padding: 10px;
+    }
+    #avatar {
+        width: 50%; /* Adjust the width as needed */
+        height: 50%; /* This maintains the aspect ratio */
+    }
+
+    .line-title {
+        justify-content: flex-start; /
+    }
+
+}
+
 
