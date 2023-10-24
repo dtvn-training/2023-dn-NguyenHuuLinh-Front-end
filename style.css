@@ -71,6 +71,9 @@ p.content-rate{
     border-radius: 5px;
 
 }
+.rate-header{
+    margin-left: 200px;
+}
 
 .item-rating{
     background-color: #66abd3; 
