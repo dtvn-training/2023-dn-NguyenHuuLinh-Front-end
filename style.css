@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    top:0;
+}
+html{
+    font-family:"Lato" sans-serif;
+}
+
+.color-text-sidebar{
+    color: #478fbd;
+}
+/* Dung chung */
+
+.w-100{
+    width: 100vh;
+}
+
+.fr{
+    float: right;
+}
+
+p.text-white {
+    margin-bottom: 0px;
+}
+
+/*  */
+#main{
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    box-shadow: 20px 20px 50px grey;
+}
+
+#sidebar{
+    /* position: fixed; */
+    top: 0;
+    left: 0;   
+    background-color: #2f3740;
+    height: 1100px;
+    /* height: 100vh; */
+    width: 30%;
+}
+
+img#avatar {
+    height: 50%;
+    border-radius: 50%;
+    width: 60%;
+    display: block; 
+    margin: 0 auto;
+    border: 3px solid #66abd3;
+    padding: 10px;
+}
+.avatar {
+    text-align: center;
+}
+.skill-rate {
+    display: flex;
+    align-items: center; 
+}
+
+p.content-rate{
+    margin: auto;
+}
+
+.rate {
+    background-color: white;
+    height: 10px;
+    width: 120px;
+    border-radius: 5px;
+
+}
+
+.item-rating{
+    background-color: #66abd3; 
+    border-radius: 5px;
+    height: 100%;
+}
+
+.rating-bar1 {
+    width: 60%; 
+}
+.rating-bar2 {
+    width: 70%; 
+}
+
+.rating-bar3 {
+    width: 80%; 
+}
+.line{
+    /* width: 100%; */
+    height: 7px;
+    background-color: #57a7d0;
+    width: 345px;
+}
+
+.content {
+    width: 70%;
+    float: right;  
+}
+
+
+
+/*------------------------------- Content----------------------- */
+.name {
+    /* margin-left: 50px; */
+}
+
+.header-experience{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
