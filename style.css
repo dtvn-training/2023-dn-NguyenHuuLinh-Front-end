@@ -1,23 +1,33 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    top:0;
-}
-html{
-    font-family:"Lato" sans-serif;
+    top: 0;
 }
 
-.color-text-sidebar{
+html {
+    font-family: "Lato" sans-serif;
+}
+
+/* Dung chung */
+.color-text-sidebar {
     color: #478fbd;
 }
-/* Dung chung */
 
-.w-100{
+.flex-column{
+    display: flex;
+    flex-direction: column;
+
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+
+.w-100 {
     width: 100vh;
 }
 
-.fr{
+.fr {
     float: right;
 }
 
@@ -26,17 +36,17 @@ p.text-white {
 }
 
 /*  */
-#main{
+#main {
     display: flex;
     width: 1000px;
     margin: auto;
     box-shadow: 20px 20px 50px grey;
 }
 
-#sidebar{
+#sidebar {
     /* position: fixed; */
     top: 0;
-    left: 0;   
+    left: 0;
     background-color: #2f3740;
     height: 1100px;
     /* height: 100vh; */
@@ -47,20 +57,22 @@ img#avatar {
     height: 50%;
     border-radius: 50%;
     width: 60%;
-    display: block; 
+    display: block;
     margin: 0 auto;
     border: 3px solid #66abd3;
     padding: 10px;
 }
+
 .avatar {
     text-align: center;
 }
+
 .skill-rate {
     display: flex;
-    align-items: center; 
+    align-items: center;
 }
 
-p.content-rate{
+p.content-rate {
     margin: auto;
 }
 
@@ -71,27 +83,30 @@ p.content-rate{
     border-radius: 5px;
 
 }
-.rate-header{
+
+.rate-header {
     margin-left: 200px;
 }
 
-.item-rating{
-    background-color: #66abd3; 
+.item-rating {
+    background-color: #66abd3;
     border-radius: 5px;
     height: 100%;
 }
 
 .rating-bar1 {
-    width: 60%; 
+    width: 60%;
 }
+
 .rating-bar2 {
-    width: 70%; 
+    width: 70%;
 }
 
 .rating-bar3 {
-    width: 80%; 
+    width: 80%;
 }
-.line{
+
+.line {
     /* width: 100%; */
     height: 7px;
     background-color: #57a7d0;
@@ -100,7 +115,7 @@ p.content-rate{
 
 .content {
     width: 70%;
-    float: right;  
+    float: right;
 }
 
 
@@ -110,10 +125,14 @@ p.content-rate{
     /* margin-left: 50px; */
 }
 
-.header-experience{
+.header-experience {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.text-experience, .text-project, .text-hobbies {
+    width: 249px;
+    display: inline-block;
 }
 
 
@@ -122,7 +141,7 @@ p.content-rate{
         flex-direction: column;
         width: 100%;
     }
-    
+
 
     #sidebar {
         width: 100%;
@@ -132,9 +151,22 @@ p.content-rate{
     .content {
         width: 100%;
     }
-    
+
     .line-title {
-        justify-content: flex-start; 
+        justify-content: flex-start;
+    }
+    /* .text-experience, .text-project, .text-hobbies {
+        width: 249px;
+        display: inline-block;
+    } */
+}
+@media (max-width: 1000px) and (min-width: 610px) {
+    .line{
+        margin-left: 50px;
+    }
+    .text-experience, .text-project, .text-hobbies {
+        width: auto;
+        display: inline-block;
     }
 }
 
@@ -143,15 +175,39 @@ p.content-rate{
         width: 100%;
         padding: 10px;
     }
+
     #avatar {
-        width: 50%; /* Adjust the width as needed */
-        height: 50%; /* This maintains the aspect ratio */
+        width: 50%;
+        /* Adjust the width as needed */
+        height: 50%;
+        /* This maintains the aspect ratio */
     }
 
     .line-title {
-        justify-content: flex-start; /
+        justify-content: flex-start;/
     }
 
 }
 
+@media (max-width: 600px) {
+    .experience,.hobbies,.project  {
+        display: flex;
+        flex-direction: column;
+    }
+    .line {
+        width: 250px;
+    }
+    .text-hobbies {
+        margin-left: 150px;
+    }
+    .text-project {
+        margin-left: 50px;
+    }
+    .text-experience{
+        margin-left: 56px;
+    }
+    
+}
+@media (max-width: 200px) {
 
+}
